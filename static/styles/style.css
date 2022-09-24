@@ -1,0 +1,43 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+header, footer {
+    text-align: center;
+    background-color:rgba(201, 208, 215, 0.514);    
+}
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 4vw;
+    max-width: 600px;
+}
+
+.game-button {
+    min-height: 125px;
+    min-width: 125px;
+    border: 1px solid black;
+}
+
+button {
+    min-height: 100px;
+    min-width: 100px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
