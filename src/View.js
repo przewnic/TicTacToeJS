@@ -19,13 +19,13 @@ class View {
             this.buttons[i].textContent = this.game.board[i];
         }
 
-        if (this.game.check_draw()) {
-            this.message.textContent = "Draw"
-        } 
-        else if(this.game.check_win()) {
+        if(this.game.check_win()) {
             this.game.change_turn();  // To get the winner
             this.message.textContent = `Won: ${this.game.players[this.game.turn].sign}`;
         }
+        else if (this.game.check_draw()) {
+            this.message.textContent = "Draw"
+        } 
         else {
             this.message.textContent = `Next move: ${this.game.players[this.game.turn].sign}`;
         }
