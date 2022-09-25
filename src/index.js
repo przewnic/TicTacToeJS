@@ -1,6 +1,7 @@
 import { Player } from "./Player";
 import { Game } from "./Game";
 import { View } from "./View";
+import "../static/styles/style.css"
 
 
 const container = document.getElementById("main");
