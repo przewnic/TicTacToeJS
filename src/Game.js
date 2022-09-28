@@ -1,3 +1,7 @@
+/* 
+    author: przewnic
+    project: TicTacToeJS
+*/
 class Game {
     constructor(player_1, player_2,) {
         this.players = [player_1, player_2];

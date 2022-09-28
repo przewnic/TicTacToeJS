@@ -1,10 +1,14 @@
+/* 
+    author: przewnic
+    project: TicTacToeJS
+*/
 import { Player } from "./Player";
 import { Game } from "./Game";
 import { View } from "./View";
 import "../static/styles/style.css"
 
 
-const container = document.getElementById("main");
+const main = document.getElementById("main");
 
 const info = document.createElement("div");
 info.classList.add("info");
@@ -13,13 +17,14 @@ info.appendChild(message);
 message.id = "message";
 const restartButton = document.createElement("button");
 restartButton.textContent = "Restart";
+restartButton.classList.add("restart-button")
 restartButton.addEventListener("click", onRestartClick)
 info.appendChild(restartButton);
-container.appendChild(info);
+main.appendChild(info);
 
 const boardContainer = document.createElement("div");
 boardContainer.classList.add("container");
-container.appendChild(boardContainer);
+main.appendChild(boardContainer);
 
 function create_fields(board) {
     const buttons = [];

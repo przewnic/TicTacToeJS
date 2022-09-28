@@ -1,3 +1,10 @@
+:root {
+    --violet: #4717F6;
+    --rose: #A239CA;
+    --black: #0E0B16;
+    --grey: #E7DFDD;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -5,39 +12,72 @@ html, body {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1, p {
+    color: var(--grey);
+}
+
+.info p {
+    color: var(--violet);
+    font-size: min(4vw, 36px);
+    font-weight: bold;
 }
 
 header, footer {
-    text-align: center;
-    background-color:rgba(201, 208, 215, 0.514);    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--black);
+    height: 52px;
 }
 
 main {
-    margin-left: auto;
-    margin-right: auto;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: white;
 }
 
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    padding: 4vw;
-    max-width: 600px;
+    border: 2px solid black;
 }
 
 .game-button {
-    min-height: 125px;
-    min-width: 125px;
-    border: 1px solid black;
-}
-
-button {
     min-height: 100px;
     min-width: 100px;
+    width: min(20vw, 150px);
+    height: min(20vw, 150px);
+    border: 2px solid black;
+    font-size: 6vw;
+    background-color: white;
+}
+
+.restart-button {
+    min-width: 100px;
+    width: min(20vw, 200px);
+    margin-bottom: 20px;
+    padding: min(1vw, 20px);
+    border-radius: 2vw;
+    background-color: white;
+    border: 2px solid var(--violet);
+    font-size: min(3vw, 20px);
+}
+
+.restart-button:hover {
+    background-color: var(--violet);
+    color: var(--grey);
 }
 
 .info {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
 }

@@ -1,3 +1,7 @@
+/* 
+    author: przewnic
+    project: TicTacToeJS
+*/
 class View {
     constructor(buttons, message, resetButton, game) {
         this.message = message;
